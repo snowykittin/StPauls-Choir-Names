@@ -7,6 +7,7 @@ html, body {
  height: 100%;
  font-family: sans-serif;
  background-color: #fff;
+ text-align: center;
 }
 h1, h2, h3, h4, h5, h6, p {
  margin-bottom: 16px
@@ -60,7 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 80%;    
+    width: 100%;    
     margin-bottom: 40px;
 }
 .button-row button{
@@ -70,6 +71,9 @@ h1, h2, h3, h4, h5, h6, p {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .section-grid{
@@ -85,15 +89,225 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 
+.section-grid .chorister{
+    width: 200px;
+    height: 250px;
+    background-color: grey;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
 
+.hidden{
+    display: none;
+}
 
+.chorister .headshot{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chorister .name{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: 2px solid #8EB6DC;
+    padding: 5px;
+}
 
 footer{
     height: 50px;
+    padding: 10px;
     background-color:#1470AF;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     
+}
+
+/* all of the choir people :))) */
+
+/* soprano 1 */
+#s11{
+    overflow: hidden;
+    background-image: url("../images/adults/kyle-walker.png"); 
+}
+#s12{
+    overflow: hidden;
+    background-image: url("../images/adults/kate-appel.png"); 
+}
+#s13{
+    overflow: hidden;
+    background-image: url("../images/adults/shannon-gardner.png"); 
+}
+#s14{
+    overflow: hidden;
+    background-image: url("../images/adults/susan-howey.png"); 
+}
+#s15{
+    overflow: hidden;
+    background-image: url("../images/adults/alicia-matkovich.png"); 
+}
+
+/* soprano 2 */
+#s21{
+    overflow: hidden;
+    background-image: url("../images/adults/elizabeth-ewigleben.png"); 
+}
+#s22{
+    overflow: hidden;
+    background-image: url("../images/adults/jennifer-christie.png"); 
+}
+#s23{
+    overflow: hidden;
+    background-image: url("../images/adults/robyn-gibboney.png"); 
+}
+#s24{
+    overflow: hidden;
+    background-image: url("../images/adults/beth-shields.png"); 
+}
+
+/* alto 1 */
+#a11{
+    overflow: hidden;
+    background-image: url("../images/adults/erin-koolman.png"); 
+}
+#a12{
+    overflow: hidden;
+    background-image: url("../images/adults/tracie-lowe.png"); 
+}
+#a13{
+    overflow: hidden;
+    background-image: url("../images/adults/liz-kryder-reid.png"); 
+}
+#a14{
+    overflow: hidden;
+    background-image: url("../images/adults/melanie-rentsch.png"); 
+}
+#a15{
+    overflow: hidden;
+    background-image: url("../images/adults/summer-sexton.png"); 
+}
+#a16{
+    overflow: hidden;
+    background-image: url("../images/adults/patti-shea-carpenter.png"); 
+}
+#a17{
+    overflow: hidden;
+    background-image: url("../images/adults/erin-walls.png"); 
+}
+
+/* alto 2 */
+#a21{
+    overflow: hidden;
+    background-image: url("../images/adults/sarah-ward.png"); 
+}
+#a22{
+    overflow: hidden;
+    background-image: url("../images/adults/pam-coates.png"); 
+}
+#a23{
+    overflow: hidden;
+    background-image: url("../images/adults/pam-douglas.png"); 
+}
+#a24{
+    overflow: hidden;
+    background-image: url("../images/adults/ann-hinson.png"); 
+}
+#a25{
+    overflow: hidden;
+    background-image: url("../images/adults/joyce-krauser.png"); 
+}
+#a26{
+    overflow: hidden;
+    background-image: url("../images/adults/becky-stoner.png"); 
+}
+
+/* tenor 1 */
+#t11{
+    overflow: hidden;
+    background-image: url("../images/adults/joseph-itoop.png");
+}
+#t12{
+    overflow: hidden;
+    background-image: url("../images/adults/rick-bernhardt.png");
+}
+#t13{
+    overflow: hidden;
+    background-image: url("../images/adults/elwood-black.png");
+}
+
+/* tenor 2 */
+#t21{
+    overflow: hidden;
+    background-image: url("../images/adults/brandon-lowe.png");
+}
+#t22{
+    overflow: hidden;
+    background-image: url("../images/adults/jose-espada.png");
+}
+#t23{
+    overflow: hidden;
+    background-image: url("../images/adults/evan-law.png");
+}
+#t24{
+    overflow: hidden;
+    background-image: url("../images/adults/gary-lowe.png");
+}
+#t25{
+    overflow: hidden;
+    background-image: url("../images/adults/john-thorpe.png");
+}
+
+/* baritones */
+#b11{
+    overflow: hidden;
+    background-image: url("../images/adults/pat-havens.png");
+}
+#b12{
+    overflow: hidden;
+    background-image: url("../images/adults/robert-alonso.png");
+}
+#b13{
+    overflow: hidden;
+    background-image: url("../images/adults/john-carvey.png");
+}
+#b14{
+    overflow: hidden;
+    background-image: url("../images/adults/brendan-kellogg.png");
+}
+#b15{
+    overflow: hidden;
+    background-image: url("../images/adults/mark-stoner.png");
+}
+
+/* basses */
+#b21{
+    overflow: hidden;
+    background-image: url("../images/adults/rick-adams.png");
+}
+#b22{
+    overflow: hidden;
+    background-image: url("../images/adults/rusty-broxterman.png");
+}
+#b23{
+    overflow: hidden;
+    background-image: url("../images/adults/bill-cummings.png");
+}
+#b24{
+    overflow: hidden;
+    background-image: url("../images/adults/ted-gibboney.png");
+}
+#b25{
+    overflow: hidden;
+    background-image: url("../images/adults/jay-heath.png");
 }
