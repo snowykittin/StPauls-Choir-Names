@@ -23,10 +23,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .header h1{
     color: #1470AF;
-    font-size: 40px;
+    font-size: 36px;
 }
 .header img{
-    width: 400px;
+    width: 300px;
 }
 .header nav{
     width: 100%;
